@@ -1,0 +1,5 @@
+{
+    "code-runner.runInTerminal": true,
+    "funnyErrorSounds.enabled": false,
+    "java.jdt.ls.protobufSupport.enabled": false
+}
