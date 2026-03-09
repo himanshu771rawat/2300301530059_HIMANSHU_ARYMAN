@@ -1,9 +1,9 @@
-//MIN ELEMNT IN A ROTATED ARRAY
+//find pivot element
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int findMin(vector<int>& arr)
+int findPivot(vector<int>& arr)
 {
     int low = 0;
     int high = arr.size() - 1;
@@ -18,14 +18,15 @@ int findMin(vector<int>& arr)
             high = mid;
     }
 
-    return arr[low];
+    return low;
 }
 
 int main()
 {
     vector<int> arr = {4,5,6,7,1,2,3};
 
-    cout << "Minimum element: " << findMin(arr);
+    int pivot = findPivot(arr);
 
-    return 0;
+    cout << "Pivot index: " << pivot << endl;
+    cout << "Pivot element: " << arr[pivot];
 }
